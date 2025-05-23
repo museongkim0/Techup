@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-cm
+data:
+  AWS_REGION: 'ap-northeast-2'
+  SECRET_KEY: 'abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789'
+  AWS_S3_BUCKET: frontbucket-xenamaniac
+  DB_PASSWORD: qwer1234
+  DB_URL: jdbc:mariadb://mariadb:3306/techup
+  DB_USERNAME: test
+  ELASTIC_HOST: 192.0.40.207
+  MASTER_DB_URL: jdbc:mariadb://mariadb:3306/techup
+  SLAVE_DB_URL: jdbc:mariadb://mariadb:3306/techup
+  REDIS_HOST: 'redis-cluster-headless'
+  REDIS_PORT: '6379'
