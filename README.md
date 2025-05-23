@@ -451,11 +451,11 @@
 
 
 ## 🚀 핵심 로직 상세 설명
-### [📃 프로젝트 Wiki](https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-FE/wiki) <br><br>
+### [📃 프로젝트 Wiki](https://github.com/museongkim0/Techup/wiki) <br><br>
 
 
 ## 📂 백엔드, DevOps 프로젝트 폴더 바로가기
-### [📃 Backend](https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/README.md) <br>
-### [📃 Devops](https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/devops/README.md)
+### [📃 Backend](https://github.com/museongkim0/Techup/tree/main/backend) <br>
+### [📃 Devops](https://github.com/museongkim0/Techup/tree/main/devops)
 <br>
 
