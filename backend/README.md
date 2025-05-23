@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./images/readme/techup_header_logo.png" /> <br>
+    <img src="../images/readme/techup_header_logo.png" /> <br>
 </div>
 
 <br>
@@ -11,10 +11,10 @@
 
 <table align="center">
  <tr>
-    <td align="center"><a href="https://github.com/GoodLeaf"><img src="./images/readme/gpu.png" width="150px;" alt=""></td>
-    <td align="center"><a href="https://github.com/museongkim0"><img src="./images/readme/cpu.png" width="150px;" alt=""></td>
-    <td align="center"><a href="https://github.com/gunha0405"><img src="./images/readme/ssd.png" width="150px;" alt=""></td>
-    <td align="center"><a href="https://github.com/Xen-alpha"><img src="./images/readme/hdd.png" width="150px;" alt=""></td>
+    <td align="center"><a href="https://github.com/GoodLeaf"><img src="../images/readme/gpu.png" width="150px;" alt=""></td>
+    <td align="center"><a href="https://github.com/museongkim0"><img src="../images/readme/cpu.png" width="150px;" alt=""></td>
+    <td align="center"><a href="https://github.com/gunha0405"><img src="../images/readme/ssd.png" width="150px;" alt=""></td>
+    <td align="center"><a href="https://github.com/Xen-alpha"><img src="../images/readme/hdd.png" width="150px;" alt=""></td>
   </tr>
   <tr>
     <td align="center">🐥<a href="https://github.com/GoodLeaf"><b>김정엽</b></td>
@@ -100,7 +100,7 @@
 
 ## 🎨 Tech-Up 서비스 소개
 <div align="center">
-    <img src="./images/readme/테크업_이미지.png" /> <br>
+    <img src="../images/readme/테크업_이미지.png" /> <br>
 </div>
 
 #### 프로젝트 배경
@@ -144,7 +144,7 @@
 
 ## 🏗️ 시스템 아키텍처
 <div align="center">
-    <img src="./images/readme/techup_final_sys_arch.png" /> <br>
+    <img src="../images/readme/techup_final_sys_arch.png" /> <br>
 </div>
 
 
@@ -377,7 +377,7 @@
 ---
 ### 쿠폰과 선착순 쿠폰 발급 이벤트
 
-![쿠폰 이벤트 등록](./images/readme/coupon-register.gif)
+![쿠폰 이벤트 등록](../images/readme/coupon-register.gif)
 
 > 관리자 쿠폰 목록 페이지에서 쿠폰 정보의 수정/삭제를 백엔드 서버에 요청할 수 있다. 관리자임을 확인하면 서버는 DB 내 지정된 쿠폰 정보를 갱신하거나 삭제하며, 사용자에게 발급한 쿠폰도 연관 관계 따라 정보가 바뀌거나 삭제된다. 단, 사용한 발급 쿠폰이 있는 쿠폰은 DB에서 제거할 수 없다.
 > 관리자가 특정 사용자 전용 쿠폰을 수동으로 발급하거나 선착순 쿠폰 발급 이벤트를 등록하려면 제품의 등록 번호, 할인율, 쿠폰 이름 및 만료일, 재고를 HTTP 요청의 body로 보내야 한다.
@@ -413,9 +413,9 @@
 
 ### 게시글 목록
 - 요청
-![게시글 목록](./images/readme/board_list_req.png)
+![게시글 목록](../images/readme/board_list_req.png)
 - 응답
-![게시글 목록](./images/readme/board_list_res.png)  
+![게시글 목록](../images/readme/board_list_res.png)  
 > 커뮤니티 페이지에 진입하여 조회 요청을 하면 백엔드 서버가 현재 등록된 게시글들을 일정한 갯수로 잘라 목록을 가져온다.<br>
 > 아래 페이지 이동 버튼들로 페이지 이동 요청을 하여 보이는 게시글 목록을 바꿀 수 있다.<br>
 > 카테고리별 보기, 좋아요순, 댓글순, 최신순 정렬이 가능하다.<br>
@@ -423,9 +423,9 @@
 
 ### 게시글 작성
 - 요청
-![게시글 작성](./images/readme/board_create_req.png)
+![게시글 작성](../images/readme/board_create_req.png)
 - 응답
-![게시글 작성](./images/readme/board_create_res.png)
+![게시글 작성](../images/readme/board_create_res.png)
 
 > 에디터에 입력한 데이터는 DB에 등록 된다. <br>
 > 에디터에 입력한 이미지와 첨부파일은 PreSignedUrl을 통해 S3 저장소에 저장된다.
@@ -436,17 +436,17 @@
 
 ### 선착순 쿠폰 발급
 - 요청
-![선착순 쿠폰 발급](./images/readme/event_coupon_req.png)
+![선착순 쿠폰 발급](../images/readme/event_coupon_req.png)
 - 응답
-![선착순 쿠폰 발급](./images/readme/event_coupon_res.png)  
+![선착순 쿠폰 발급](../images/readme/event_coupon_res.png)  
 > 로그인한 사용자가 특정 이벤트 쿠폰 발급을 요청하면, 해당 요청은 Redis 기반 큐에 등록되어 순차적으로 처리됩니다.<br>
 > 요청 시, 서버는 사용자의 큐 등록 여부를 확인하고 등록 순서(queuePosition) 및 전체 큐 내 등수(queueRank)를 함께 응답합니다.<br>
 
 ### 쿠폰 내용 확인
 - 요청
-![쿠폰 내용](./images/readme/coupon_detail_req.png)
+![쿠폰 내용](../images/readme/coupon_detail_req.png)
 - 응답
-![쿠폰 내용](./images/readme/coupon_detail_res.png)
+![쿠폰 내용](../images/readme/coupon_detail_res.png)
 
 > 사용자가 특정 쿠폰의 상세 정보를 조회하면, 서버는 해당 쿠폰의 이름, 할인율, 유효기간, 재고 수량, 연결된 상품 정보를 함께 반환합니다.<br>
 > /coupon/details/{idx} 경로를 통해 GET 방식으로 호출되며, idx는 조회하고자 하는 쿠폰의 고유 ID입니다.<br>
@@ -456,9 +456,9 @@
 
 
 ## 🚀 핵심 로직 상세 설명
-### [📃 프로젝트 Wiki](https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/wiki) <br><br>
+### [📃 프로젝트 Wiki](https://github.com/museongkim0/Techup/wiki) <br><br>
 
 ## 📂 프론트엔드, DevOps 프로젝트 폴더 바로가기
-### [📃 Frontend](https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-FE/blob/main/README.md) <br>
-### [📃 Devops](https://github.com/beyond-sw-camp/be12-fin-404Found-Tech-Up-BE/blob/main/devops/README.md)
+### [📃 Frontend](https://github.com/museongkim0/Techup) <br>
+### [📃 Devops](https://github.com/museongkim0/Techup/tree/main/devops)
 <br>
